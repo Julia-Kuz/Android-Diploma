@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.netology.diploma.activity.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_allPostsFragment"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dialogFragmentSignOut"
+            app:destination="@id/dialogFragmentSignOut" />
+        <action
+            android:id="@+id/action_mainFragment_to_dialogFragmentSignIn"
+            app:destination="@id/dialogFragmentSignIn" />
+        <action
+            android:id="@+id/action_mainFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_allUsersFragment"
+            app:destination="@id/allUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPostsFragment"
+        android:name="ru.netology.diploma.activity.AllPostsFragment"
+        android:label="AllPostsFragment" >
+        <action
+            android:id="@+id/action_allPostsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_dialogFragmentSignIn"
+            app:destination="@id/dialogFragmentSignIn" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_detailedOnePostFragment"
+            app:destination="@id/detailedOnePostFragment" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_dialogFragmentSignOut"
+            app:destination="@id/dialogFragmentSignOut" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_allPostsFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedOnePostFragment"
+        android:name="ru.netology.diploma.activity.DetailedOnePostFragment"
+        android:label="DetailedOnePostFragment" >
+        <action
+            android:id="@+id/action_detailedOnePostFragment_to_allPostsFragment"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_detailedOnePostFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_detailedOnePostFragment_to_allLikersFragment"
+            app:destination="@id/allLikersFragment" />
+        <action
+            android:id="@+id/action_detailedOnePostFragment_to_allMentionedFragment"
+            app:destination="@id/allMentionedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="ru.netology.diploma.activity.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="ru.netology.diploma.activity.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialogFragmentSignOut"
+        android:name="ru.netology.diploma.activity.DialogFragmentSignOut"
+        android:label="fragment_dialog_sign_out"
+        tools:layout="@layout/fragment_dialog_sign_out" >
+        <action
+            android:id="@+id/action_dialogFragmentSignOut_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignOut_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialogFragmentSignIn"
+        android:name="ru.netology.diploma.activity.DialogFragmentSignIn"
+        android:label="fragment_dialog_sign_in"
+        tools:layout="@layout/fragment_dialog_sign_in" >
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_allPostsFragment"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+        <action
+            android:id="@+id/action_dialogFragmentSignIn_to_allUsersFragment"
+            app:destination="@id/allUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="ru.netology.diploma.activity.NewPostFragment"
+        android:label="fragment_new_post"
+        tools:layout="@layout/fragment_new_post" >
+        <action
+            android:id="@+id/action_newPostFragment_to_allPostsFragment"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_newPostFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_newPostFragment_to_choosingFragment"
+            app:destination="@id/choosingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="ru.netology.diploma.activity.EditPostFragment"
+        android:label="EditPostFragment" >
+        <action
+            android:id="@+id/action_editPostFragment_to_detailedOnePostFragment"
+            app:destination="@id/detailedOnePostFragment" />
+        <action
+            android:id="@+id/action_editPostFragment_to_allPostsFragment"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_editPostFragment_to_allPostsFragment2"
+            app:destination="@id/allPostsFragment" />
+        <action
+            android:id="@+id/action_editPostFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_editPostFragment_to_choosingFragment"
+            app:destination="@id/choosingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.netology.diploma.activity.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allEventsFragment"
+        android:name="ru.netology.diploma.activity.events.AllEventsFragment"
+        android:label="AllEventsFragment" >
+        <action
+            android:id="@+id/action_allEventsFragment_to_dialogFragmentSignIn"
+            app:destination="@id/dialogFragmentSignIn" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_dialogFragmentSignOut"
+            app:destination="@id/dialogFragmentSignOut" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_detailedOneEventFragment"
+            app:destination="@id/detailedOneEventFragment" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+        <action
+            android:id="@+id/action_allEventsFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedOneEventFragment"
+        android:name="ru.netology.diploma.activity.events.DetailedOneEventFragment"
+        android:label="DetailedOneEventFragment" >
+        <action
+            android:id="@+id/action_detailedOneEventFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+        <action
+            android:id="@+id/action_detailedOneEventFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+        <action
+            android:id="@+id/action_detailedOneEventFragment_to_allSpeakersFragment"
+            app:destination="@id/allSpeakersFragment" />
+        <action
+            android:id="@+id/action_detailedOneEventFragment_to_allLikersEventFragment"
+            app:destination="@id/allLikersEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newEventFragment"
+        android:name="ru.netology.diploma.activity.events.NewEventFragment"
+        android:label="NewEventFragment" >
+        <action
+            android:id="@+id/action_newEventFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+        <action
+            android:id="@+id/action_newEventFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_newEventFragment_to_choosingFragment"
+            app:destination="@id/choosingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editEventFragment"
+        android:name="ru.netology.diploma.activity.events.EditEventFragment"
+        android:label="EditEventFragment" >
+        <action
+            android:id="@+id/action_editEventFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_editEventFragment_to_allEventsFragment"
+            app:destination="@id/allEventsFragment" />
+        <action
+            android:id="@+id/action_editEventFragment_to_detailedOneEventFragment"
+            app:destination="@id/detailedOneEventFragment" />
+        <action
+            android:id="@+id/action_editEventFragment_to_choosingFragment"
+            app:destination="@id/choosingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allUsersFragment"
+        android:name="ru.netology.diploma.activity.users.AllUsersFragment"
+        android:label="AllUsersFragment" >
+        <action
+            android:id="@+id/action_allUsersFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_allUsersFragment_to_detailedUserCardFragment"
+            app:destination="@id/detailedUserCardFragment" />
+        <action
+            android:id="@+id/action_allUsersFragment_to_dialogFragmentSignIn"
+            app:destination="@id/dialogFragmentSignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedUserCardFragment"
+        android:name="ru.netology.diploma.activity.users.DetailedUserCardFragment"
+        android:label="DetailedUserCardFragment" >
+        <action
+            android:id="@+id/action_detailedUserCardFragment_to_allUsersFragment"
+            app:destination="@id/allUsersFragment" />
+        <action
+            android:id="@+id/action_detailedUserCardFragment_to_newJobFragment"
+            app:destination="@id/newJobFragment" />
+        <action
+            android:id="@+id/action_detailedUserCardFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_detailedUserCardFragment_to_editJobFragment"
+            app:destination="@id/editJobFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newJobFragment"
+        android:name="ru.netology.diploma.activity.users.NewJobFragment"
+        android:label="NewJobFragment" >
+        <action
+            android:id="@+id/action_newJobFragment_to_detailedUserCardFragment"
+            app:destination="@id/detailedUserCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editJobFragment"
+        android:name="ru.netology.diploma.activity.users.EditJobFragment"
+        android:label="EditJobFragment" >
+        <action
+            android:id="@+id/action_editJobFragment_to_detailedUserCardFragment"
+            app:destination="@id/detailedUserCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allLikersFragment"
+        android:name="ru.netology.diploma.activity.users.AllLikersFragment"
+        android:label="AllLikersFragment" >
+        <action
+            android:id="@+id/action_allLikersFragment_to_detailedOnePostFragment"
+            app:destination="@id/detailedOnePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosingFragment"
+        android:name="ru.netology.diploma.activity.users.ChoosingFragment"
+        android:label="ChoosingFragment" >
+        <action
+            android:id="@+id/action_choosingFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_choosingFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_choosingFragment_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+        <action
+            android:id="@+id/action_choosingFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allMentionedFragment"
+        android:name="ru.netology.diploma.activity.users.AllMentionedFragment"
+        android:label="AllMentionedFragment" >
+        <action
+            android:id="@+id/action_allMentionedFragment_to_detailedOnePostFragment"
+            app:destination="@id/detailedOnePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allSpeakersFragment"
+        android:name="ru.netology.diploma.activity.users.AllSpeakersFragment"
+        android:label="AllSpeakersFragment" >
+        <action
+            android:id="@+id/action_allSpeakersFragment_to_detailedOneEventFragment"
+            app:destination="@id/detailedOneEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allLikersEventFragment"
+        android:name="ru.netology.diploma.activity.users.AllLikersEventFragment"
+        android:label="AllLikersEventFragment" >
+        <action
+            android:id="@+id/action_allLikersEventFragment_to_detailedOneEventFragment"
+            app:destination="@id/detailedOneEventFragment" />
+    </fragment>
+
+</navigation>
